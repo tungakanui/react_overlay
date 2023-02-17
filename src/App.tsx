@@ -311,3 +311,5 @@ function App() {
 }
 
 export default App;
+
+{/* <Stage width={window.innerWidth} height={window.innerHeight}> */ }
