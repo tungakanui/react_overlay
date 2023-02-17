@@ -28,7 +28,7 @@ function hexToRgb(hex: string) {
 
 function FilterViaCanvasImage({ props }: { props: CanvasProp }) {
     const [image] = useImage(props.mask_url, "anonymous");
-    const imageRef = React.createRef<Konva.Image>();
+    const imageRef = React.useRef<Konva.Image>(null);
     const [red, setRed] = React.useState(0);
     const [blue, setBlue] = React.useState(0);
     const [green, setGreen] = React.useState(0);
